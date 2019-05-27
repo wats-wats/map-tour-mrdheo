@@ -8,10 +8,6 @@
 
   <!-- Demo styles -->
   <style>
-    html, body {
-      position: relative;
-      height: 100%;
-    }
     body {
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -28,9 +24,6 @@
       text-align: center;
       font-size: 12px;
       background: #fff;
-      background-size: cover !important;
-      background-repeat: no-repeat !important;
-      background-position: center !important;
 
       /* Center slide text vertically */
       display: -webkit-box;
@@ -89,17 +82,10 @@
   <script>
     var swiper = new Swiper('.swiper-container', {
       autoHeight: true,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
+      spaceBetween: 20,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + '</span>';
-        },
       },
       navigation: {
         nextEl: '.swiper-button-next',
